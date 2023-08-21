@@ -23,7 +23,9 @@ class TestDirection(unittest.TestCase):
             dir_obj.direction = 5
 
     def test_get_turns(self):
-        turns = Direction.get_turns(0, 1, 0)
+        d_temp = Direction()
+        d_temp.d = 0
+        turns = d_temp.get_turns(1, 0)
         self.assertIsInstance(turns, list)
         self.assertEqual(len(turns), 1)
 
