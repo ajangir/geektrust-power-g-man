@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strings"
 )
 
 func main() {
@@ -28,13 +29,12 @@ func main() {
 	scanner := bufio.NewScanner(file)
 
 	for scanner.Scan() {
-		fmt.Println("Hello fucker")
-		/*
-			args := scanner.Text()
-			argList := strings.Fields(args)
-
-			Add your code here to process the input commands
-		*/
-
+		//fmt.Println("Hello fucker")
+		args := scanner.Text()
+		argList := strings.Fields(args)
+		for _,str:= range argList{
+			fmt.Println(str)
+		}
+			
 	}
 }
