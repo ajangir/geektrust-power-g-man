@@ -23,7 +23,6 @@ namespace PowerGMan
             {
                 Console.WriteLine(ex.Message);
             }
-            
         }
     }
 }

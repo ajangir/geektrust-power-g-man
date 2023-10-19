@@ -13,6 +13,7 @@ class Solution:
     @property
     def start(self):
         return self._start
+    
     @start.setter
     def start(self, value: Point):
         self._start = value
