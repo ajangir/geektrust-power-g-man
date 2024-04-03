@@ -10,7 +10,7 @@ class Point:
 
     @x.setter
     def x(self, a:int):
-        self._x= int(a)
+        self._x = int(a)
     
     @property
     def y(self):

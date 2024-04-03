@@ -16,7 +16,7 @@ namespace PowerGMan
             try
             {
                 string[] inputData = File.ReadAllLines(args[0]);
-
+xz
                 Controller.RunController(inputData);
             }
             catch(Exception ex)
